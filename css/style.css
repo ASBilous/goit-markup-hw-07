@@ -200,36 +200,17 @@ body {
   background-color: #2e2f42;
 }
 .footer-logo {
-}
-.footer-web {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.33;
-  display: flex;
-  align-items: center;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
-.footer-studio {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+.Studio-footer {
   color: #f4f4fd;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 .footer-about {
   font-weight: 400;
