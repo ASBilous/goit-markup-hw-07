@@ -31,7 +31,8 @@ body {
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 1.17;
+  letter-spacing: 0.03em
   text-transform: uppercase;
   color: #4d5ae5;
 }
@@ -45,11 +46,16 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--header-item-color);
+  
 }
 .header-item :hover,
 .header-item :focus {
   color: #404bbf;
+}
+
+.header-link {
+    color: var(--header-item-color);
+
 }
 .address {
   font-style: normal;
