@@ -226,9 +226,9 @@ body {
 }
 
 /* First section */
-.first-section-portfolio {
+.section-portfolio {
 }
-.first-section-header-portfolio {
+.section-header-portfolio {
 }
 .portfolio-filters-list {
 }
@@ -245,13 +245,6 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
-}
-
-/* Second section */
-
-.second-section-portfolio {
-}
-.second-section-header-portfolio {
 }
 .portfolio-project-list {
 }
