@@ -249,13 +249,8 @@ body {
   flex-grow: 0;
   cursor: pointer;
 }
-.portfolio-project-list {
-}
-.portfolio-project-item {
-}
-.portfolio-project-image {
-}
-.portfolio-project-tittle {
+
+.title-about {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -265,7 +260,7 @@ body {
   order: 0;
   flex-grow: 0;
 }
-.portfolio-project-category {
+.title-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
