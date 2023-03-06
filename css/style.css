@@ -1,6 +1,7 @@
 :root {
   --header-item-color: #2e2f42;
   --address-list-color: #434455;
+  --portfolio-btn-color: #4d5ae5;
 }
 
 /* Body */
@@ -233,7 +234,8 @@ body {
 .portfolio-filters-list {
 }
 .portfolio-btn {
-  background-color: #404bbf;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--portfolio-btn-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -245,6 +247,7 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
+  cursor: pointer;
 }
 .portfolio-project-list {
 }
