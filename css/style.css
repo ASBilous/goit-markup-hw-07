@@ -1,3 +1,8 @@
+:root {
+  --header-item-color: #2e2f42;
+  --address-list-color: #434455;
+}
+
 /* Body */
 body {
   font-family: "Roboto", sans-serif;
@@ -22,37 +27,16 @@ body {
 }
 
 .header-logo {
-}
-
-.color-logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
-.color-studio {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+.Studio {
   color: #2e2f42;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 .header-list {
 }
@@ -61,24 +45,26 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  color: var(--header-item-color);
+}
+.header-item :hover,
+.header-item :focus {
+  color: #404bbf;
 }
 .address {
+  font-style: normal;
 }
 .address-list {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--address-list-color);
 }
 
 .address-list :hover,
 .address-list :focus {
+  color: #404bbf;
 }
 
 /* Main */
