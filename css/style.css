@@ -17,6 +17,10 @@ body {
   text-decoration: none;
 }
 
+.link:is(:hover, :focus, :active) {
+  color: #404bbf;
+}
+
 .list {
   list-style: none;
 }
@@ -114,6 +118,11 @@ body {
   cursor: pointer;
 }
 
+.button:is(:hover, :focus, :active) {
+  color: #ffffff;
+  background: #404bbf;
+}
+
 /* Second section */
 
 .second-section {
@@ -130,19 +139,12 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 .second-item-description {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 /* Third section */
@@ -165,8 +167,10 @@ body {
 
 /* Fourth section */
 
-.fourth-section {
+.team-list {
+  background: #ffffff;
 }
+
 .fourth-section-header {
   font-weight: 700;
   font-size: 36px;
@@ -179,6 +183,7 @@ body {
 .fourth-section-list {
 }
 .fourth-item {
+  background: #f4f4fd;
 }
 .fourth-item-image {
 }
@@ -224,7 +229,6 @@ body {
   color: #f4f4fd;
 }
 .footer-about {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -245,7 +249,7 @@ body {
 }
 
 .hero-button {
-  font-family: inherit;
+  font-family: var(--paragraph-title-font-family);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -258,6 +262,10 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+}
+.button:is(:hover, :focus, :active) {
+  color: #ffffff;
+  background: #404bbf;
 }
 
 .hero-btn-list {
@@ -273,6 +281,19 @@ body {
   color: #4d5ae5;
   background: #f4f4fd;
   cursor: pointer;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background: #404bbf;
+}
+
+.btn:focus {
+  color: #ffffff;
+  background: #404bbf;
+}
+.btn:active {
+  color: #ffffff;
 }
 
 .hero {
@@ -293,7 +314,6 @@ body {
   flex-grow: 0;
 }
 .title-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
