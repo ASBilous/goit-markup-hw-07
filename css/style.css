@@ -166,6 +166,9 @@ body {
 }
 
 /* Fourth section */
+.fourth-section {
+  background-color: #f4f4fd;
+}
 
 .team-list {
   background: #ffffff;
@@ -182,8 +185,9 @@ body {
 }
 .fourth-section-list {
 }
+
 .fourth-item {
-  background: #f4f4fd;
+  background: #ffffff;
 }
 .fourth-item-image {
 }
@@ -237,15 +241,15 @@ body {
 
 /* Portfolio */
 
-.main-portfolio {
-}
-
 /* First section */
-.section-portfolio {
-}
-.section-header-portfolio {
-}
-.portfolio-filters-list {
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
 }
 
 .hero-button {
