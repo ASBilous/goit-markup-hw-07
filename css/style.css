@@ -117,8 +117,7 @@ body {
   cursor: pointer;
 }
 .button:is(:hover, :focus, :active) {
-  color: #ffffff;
-  background: #404bbf;
+  color: #404bbf;
 }
 
 .hero-btn-list {
@@ -137,13 +136,11 @@ body {
 }
 
 .btn:hover {
-  color: #ffffff;
-  background: #404bbf;
+  color: #404bbf;
 }
 
 .btn:focus {
-  color: #ffffff;
-  background: #404bbf;
+  color: #404bbf;
 }
 .btn:active {
   color: #ffffff;
@@ -297,9 +294,9 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
+
 .button:is(:hover, :focus, :active) {
-  color: #ffffff;
-  background: #404bbf;
+  color: #404bbf;
 }
 
 .hero-btn-list {
