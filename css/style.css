@@ -12,6 +12,28 @@ body {
   --adres-title-color: #434455;
 }
 
+img {
+  display: block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+button,
+btn {
+  cursor: pointer;
+}
+
 /* Txt decoration & list style  */
 .link {
   text-decoration: none;
@@ -38,6 +60,10 @@ body {
 .header {
 }
 .header-nav {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .web-container {
@@ -47,19 +73,33 @@ body {
 }
 
 .header-logo {
-  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 1.17;
+  display: flex;
+  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 .studio {
+  font-style: normal;
+  font-weight: 800;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: #2e2f42;
 }
 .header-list {
+  display: flex;
+  gap: 40px;
 }
 .header-item {
 }
@@ -76,6 +116,11 @@ body {
 }
 
 .header-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 .address {
   font-style: normal;
@@ -123,7 +168,7 @@ body {
   letter-spacing: 0.04em;
   color: #ffffff;
   background: #4d5ae5;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(107, 80, 80, 0.15);
   border-radius: 4px;
 
   display: block;
@@ -143,6 +188,7 @@ body {
 
 .button:is(:hover, :focus, :active) {
   color: #404bbf;
+  background: #404bbf;
 }
 
 .hero-btn-list {
@@ -167,10 +213,12 @@ body {
 
 .btn:hover {
   color: #404bbf;
+  background: #404bbf;
 }
 
 .btn:focus {
   color: #404bbf;
+  background: #404bbf;
 }
 .btn:active {
   color: #ffffff;
@@ -441,4 +489,8 @@ body {
 }
 
 .hero-list {
+  margin-left: 271px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
