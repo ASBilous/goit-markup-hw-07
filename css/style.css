@@ -10,6 +10,8 @@ body {
   --second-title-color: #2e2f42;
   --paragraph-title-font-family: "Roboto", sans-serif;
   --adres-title-color: #434455;
+  --white: #ffffff;
+  --element-gap: 24px;
 }
 
 img {
@@ -126,6 +128,8 @@ btn {
   font-style: normal;
 }
 .address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .address-mail {
@@ -151,11 +155,10 @@ btn {
 /* First section */
 
 .title {
-  font-style: normal;
-  font-weight: 700;
+  width: 496px;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
+
   letter-spacing: 0.02em;
   color: #ffffff;
   margin: 0 auto;
@@ -168,13 +171,13 @@ btn {
   letter-spacing: 0.04em;
   color: #ffffff;
   background: #4d5ae5;
-  box-shadow: 0px 4px 4px rgba(107, 80, 80, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
   display: block;
   margin: 0 auto;
   padding: 16px 32px;
   margin-top: 48px;
+  border: none;
 }
 
 .hero-title {
@@ -187,7 +190,7 @@ btn {
 }
 
 .button:is(:hover, :focus, :active) {
-  color: #404bbf;
+  color: #ffffff;
   background: #404bbf;
 }
 
@@ -209,15 +212,17 @@ btn {
   justify-content: center;
   align-items: center;
   padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 
 .btn:hover {
-  color: #404bbf;
+  color: #ffffff;
   background: #404bbf;
 }
 
 .btn:focus {
-  color: #404bbf;
+  color: #ffffff;
   background: #404bbf;
 }
 .btn:active {
@@ -245,6 +250,7 @@ btn {
   gap: 24px;
 }
 .second-item {
+  width: 264px;
 }
 .second-item-tittle {
   font-weight: 500;
@@ -344,6 +350,8 @@ btn {
 /* Footer */
 
 .footer {
+  padding-top: 102px;
+  padding-bottom: 100px;
   background: var(--second-title-color);
 }
 
@@ -356,6 +364,7 @@ btn {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: flex;
 }
 .studio-footer {
   color: #f4f4fd;
@@ -382,12 +391,12 @@ btn {
   margin-top: 16px;
 }
 
-.footer-container {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
 /* Portfolio */
+
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 
 .border {
   background: #ffffff;
@@ -397,15 +406,24 @@ btn {
 }
 
 .servise-item {
-  flex-basis: auto;
+  width: calc((100% - var(--element-gap) * 2) / 3);
+
+  background-color: var(--white);
 }
 
 .about-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;
   margin-top: 72px;
-  padding-bottom: 120px;
+  column-gap: var(--element-gap);
+  row-gap: calc(var(--element-gap) * 2);
+}
+
+.work-content {
+  padding: 32px 15px;
+
+  border: 1px solid var(--cornflower);
+  border-top: none;
 }
 
 .title-about {
@@ -422,8 +440,6 @@ btn {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--adres-title-color);
-  margin-left: 16px;
-  padding-bottom: 32px;
 }
 
 .title {
@@ -434,22 +450,6 @@ btn {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-}
-
-.hero-button {
-  font-family: var(--paragraph-title-font-family);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  background: #4d5ae5;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 .button:is(:hover, :focus, :active) {
