@@ -190,8 +190,7 @@ btn {
 }
 
 .button:is(:hover, :focus, :active) {
-  color: #ffffff;
-  background: #404bbf;
+  background-color: #404bbf;
 }
 
 .hero-btn-list {
@@ -433,7 +432,7 @@ btn {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--second-title-color);
-  margin: 32px 54px 8px 16px;
+  margin-bottom: 8px;
 }
 .title-text {
   font-size: 16px;
@@ -453,7 +452,6 @@ btn {
 }
 
 .button:is(:hover, :focus, :active) {
-  color: #404bbf;
 }
 
 .hero-btn-list {
@@ -489,8 +487,8 @@ btn {
 }
 
 .hero-list {
-  margin-left: 271px;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  justify-content: center;
 }
