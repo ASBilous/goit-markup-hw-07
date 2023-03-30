@@ -12,6 +12,7 @@ body {
   --adres-title-color: #434455;
   --white: #ffffff;
   --element-gap: 24px;
+  --cloud: #f4f4fd;
 }
 
 img {
@@ -264,6 +265,16 @@ btn {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.feature-icon-bg {
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--cloud);
+  border-radius: 4px;
 }
 
 /* Third section */
