@@ -16,6 +16,7 @@ body {
   --ocean: #404bbf;
   --element-gap: 24px;
   --iris: #4d5ae5;
+  --grey: rgba(46, 47, 66, 0.7);
   --light-slate: #8e8f99;
   --transparent-white: rgba(255, 255, 255, 0.1);
 }
@@ -160,11 +161,25 @@ btn {
 }
 /* First section */
 
+.hero {
+  max-width: 1440px;
+  padding: auto;
+  margin: 0 auto;
+  background: var(--navi-blue);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .title {
   width: 496px;
   font-size: 56px;
   line-height: 1.07;
-
   letter-spacing: 0.02em;
   color: #ffffff;
   margin: 0 auto;
@@ -232,10 +247,6 @@ btn {
 }
 .btn:active {
   color: #ffffff;
-}
-
-.hero {
-  background: var(--navi-blue);
 }
 
 .hero-none {
