@@ -6,6 +6,8 @@ body {
 }
 
 :root {
+  --cornflower: #e7e9fc;
+  --green: #31d0aa;
   --main-title-color: #ffffff;
   --navi-blue: #2e2f42;
   --paragraph-title-font-family: "Roboto", sans-serif;
@@ -61,7 +63,7 @@ btn {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 /* Header */
@@ -277,13 +279,14 @@ btn {
   margin-bottom: 8px;
 }
 .second-item-description {
-  font-size: 16px;
+  margin-top: 8px;
+
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
 }
 
 .feature-icon-bg {
+  padding: 24px 100px;
   height: 112px;
   display: flex;
   align-items: center;
@@ -291,6 +294,7 @@ btn {
 
   background-color: var(--cloud);
   border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 /* Third section */
@@ -333,7 +337,7 @@ btn {
 
 .team-social-list {
   display: flex;
-  margin-top: 8px;
+
   gap: var(--element-gap);
 }
 
@@ -375,13 +379,13 @@ btn {
   display: flex;
   gap: 24px;
   padding-bottom: 120px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
 }
 
 .fourth-item {
   background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .fourth-item-image {
 }
@@ -393,7 +397,7 @@ btn {
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .fourth-item-profession {
@@ -402,8 +406,7 @@ btn {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--adres-title-color);
-  margin-top: 8px;
-  padding-bottom: 32px;
+  margin-bottom: 8px;
 }
 
 /* Fifth section Customers */
@@ -423,10 +426,10 @@ btn {
   text-transform: capitalize;
 
   color: var(--navi-blue);
+  margin-bottom: 72px;
 }
 
 .customers-list {
-  margin-top: 72px;
   display: flex;
   flex-wrap: wrap;
   gap: var(--element-gap);
@@ -545,8 +548,9 @@ btn {
   padding-top: 96px;
   padding-bottom: 120px;
 }
-
 .border {
+}
+.border:hover {
   background: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -629,10 +633,6 @@ btn {
 }
 .btn:active {
   color: #ffffff;
-}
-
-.hero {
-  background: var(--navi-blue);
 }
 
 .hero-list {
