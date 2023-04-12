@@ -670,6 +670,30 @@ btn {
 
 /* Portfolio */
 
+.overlay-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  padding: 40px 32px 164px 32px;
+  position: absolute;
+  top: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
+  background-blend-mode: soft-light;
+  mix-blend-mode: normal;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: var(--speed-transform);
+}
+
 .portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
@@ -687,6 +711,10 @@ btn {
   width: calc((100% - var(--element-gap) * 2) / 3);
 
   background-color: var(--white);
+}
+
+.servise-item:hover .overlay {
+  transform: translateY(0);
 }
 
 .about-list {
