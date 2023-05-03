@@ -28,6 +28,20 @@ img {
   display: block;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 p,
 h1,
 h2,
@@ -825,7 +839,7 @@ btn {
 
 .modal {
   width: 408px;
-  max-height: 584px;
+  min-height: 584px;
   left: 516px;
 
   background: #fcfcfc;
@@ -891,11 +905,14 @@ btn {
   color: var(--navi-blue);
 }
 .modal-wrap {
+  display: block;
+  text-align: left;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
   margin-bottom: 4px;
-  display: inline-block;
-  width: 100%;
-  width: 34px;
-  height: 14px;
+  color: #8e8f99;
 }
 .coment-wrap {
   margin-bottom: 4px;
@@ -943,6 +960,7 @@ btn {
 }
 
 .submit-button {
+  font-weight: 500;
   width: 169px;
   height: 56px;
   font-family: var(--paragraph-title-font-family);
