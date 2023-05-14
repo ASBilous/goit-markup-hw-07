@@ -24,12 +24,14 @@
   </head>
 
   <body>
+    <!-- HEADER -->
     <header class="header">
       <div class="container web-container">
         <nav class="header-nav list">
           <a class="header-logo link" href="./index.html"
             >Web <span class="studio">Studio</span></a
           >
+          <!-- NAVIGATE -->
           <ul class="header-list list">
             <li class="header-item">
               <a class="header-link-current link" href="./index.html">Studio</a>
@@ -57,6 +59,76 @@
             </li>
           </ul>
         </address>
+        <!-- NAV BUTTON -->
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg width="32" Height="22" class="menu-mob-icon">
+            <use href="./images/icons.svg#burger-icon"></use>
+            se
+          </svg>
+        </button>
+      </div>
+      <!-- menu -->
+      <div class="mob-menu is-hidden" data-menu>
+        <button type="button" class="mob-modal-close" data-menu-close>
+          <svg width="8" Height="8" class="close">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu-list list">
+          <li class="mob-menu-item">
+            <a class="link mob-menu-link" href="./index.html">Studio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="link mob-menu-link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="link mob-menu-link" href="">Contacts</a>
+          </li>
+        </ul>
+        <div>
+          <ul class="list menu-mail-list">
+            <li class="mob-menu-tel">
+              <a class="link menu-tel" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mob-menu-mail">
+              <a class="link menu-mail" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-soc-list list">
+            <li class="mob-soc-item item">
+              <a class="mob-soc-link link" href="">
+                <svg width="24" Height="24" class="mob-soc-icon">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item item">
+              <a class="mob-soc-link link" href="">
+                <svg width="24" Height="24" class="mob-soc-icon">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item item">
+              <a class="mob-soc-link link" href="">
+                <svg width="24" Height="24" class="mob-soc-icon">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item item">
+              <a class="mob-soc-link link" href="">
+                <svg width="24" Height="24" class="mob-soc-icon">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- section 1 -->
@@ -137,13 +209,28 @@
           <h2 class="third-section-header">What are we doing</h2>
           <ul class="third-section-list list">
             <li class="third-item list">
-              <img src="./images/img_1.jpg" alt="imac" width="360" />
+              <img
+                srcset="./images/img_1.jpg 1x, ./images/img_1-2x.jpg 2x"
+                src="./images/img_1.jpg"
+                alt="imac"
+                width="360"
+              />
             </li>
             <li class="third-item list">
-              <img src="./images/img_2.jpg" alt="screens" width="360" />
+              <img
+                srcset="./images/img_2.jpg 1x, ./images/img_2-2x.jpg 2x"
+                src="./images/img_2.jpg"
+                alt="screens"
+                width="360"
+              />
             </li>
             <li class="third-item list">
-              <img src="./images/img_3.jpg" alt="devices" width="360" />
+              <img
+                srcset="./images/img_3.jpg 1x, ./images/img_3-2x.jpg 2x"
+                src="./images/img_3.jpg"
+                alt="devices"
+                width="360"
+              />
             </li>
           </ul>
         </div>
@@ -158,6 +245,7 @@
             <li class="fourth-item list">
               <img
                 class="fourth-item-image"
+                srcset="./images/img_4.jpg 1x, ./images/img_4-2x.jpg 2x"
                 src="./images/img_4.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -204,6 +292,7 @@
             <li class="fourth-item list">
               <img
                 class="fourth-item-image"
+                srcset="./images/img_5.jpg 1x, ./images/img_5-2x.jpg 2x"
                 src="./images/img_5.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -249,6 +338,7 @@
             <li class="fourth-item list">
               <img
                 class="fourth-item-image"
+                srcset="./images/img_6.jpg 1x, ./images/img_6-2x.jpg 2x"
                 src="./images/img_6.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -294,6 +384,7 @@
             <li class="fourth-item list">
               <img
                 class="fourth-item-image"
+                srcset="./images/img_7.jpg 1x, ./images/img_7-2x.jpg 2x"
                 src="./images/img_7.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -574,5 +665,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
